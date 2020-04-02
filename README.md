@@ -1,2 +1,2 @@
 # luke_options
-some tools to play around with call options
+some Python/R tools to play around with call options
