@@ -1,0 +1,20 @@
+# Implied Volatility Code
+## function to find implied volatility under BSM framework
+
+
+# parameters 
+
+S0 <- 51.25
+T <- 32/365 # maturity expressed as a fraction of the year
+r<- 0.05
+K <- 50 
+MarketVC <- 2 
+
+#function for implied vol 
+
+ImpVol <- function(sigmaV){
+  S0*pnorm((log(S0) - log(K) + (r+1/2*(sigmaV)^2)*T)/(sigmaV * sqrt(T))) - K*exp(-r*T)*pnorm((log(S0)-log(K)+(r-1/2*(sigmaV)^2)*T)/(sigmaV * sqrt(T))) - MarketVC
+}
+
+# solving for sigmaV
+uniroot(ImpVol, c(0,1))
