@@ -1,5 +1,4 @@
-from pricingExercise import Payoff
-
+from pricingExercise.payoffClass import Payoff
 
 class Option:
     def __init__(self, payoff_type: Payoff, expiry, option_type):
