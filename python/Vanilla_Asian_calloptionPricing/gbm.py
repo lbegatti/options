@@ -1,4 +1,4 @@
-from princingExercise import Option
+from princingExercise.option import Option
 import numpy as np
 from math import exp, sqrt
 import random
