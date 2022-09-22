@@ -1,2 +1,1 @@
-# luke_options
-some Python/R tools to play around with call options
+Some prototype code in Python/R to play around with options.
