@@ -1,4 +1,4 @@
-from reports.ccr.xva.core.option import Option
+from princingExercise import Option
 import numpy as np
 from math import exp, sqrt
 import random
