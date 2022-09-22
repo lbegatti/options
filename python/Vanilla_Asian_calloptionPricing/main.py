@@ -1,4 +1,4 @@
-from pricingExercise.Payoff import Payoff
+from pricingExercise.payoffClass import Payoff
 from pricingExercise.option import Option
 from pricingExercise.gbm import GBM
 from pricingExercise.blackscholes import BS
